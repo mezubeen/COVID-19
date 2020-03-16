@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="secondary" [class.show-background]="showToolbar">
+    <ion-title>Do's and Don'ts</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <!-- <ion-icon slot="icon-only" name="logo-facebook"></ion-icon> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen (ionScroll)="onScroll($event)" [scrollEvents]="true">
+  <ion-grid no-padding>
+    <ion-row card-background-page padding-horizontal>
+
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card" background-size text-left (click)="toAwreness()"
+          style="background-image: url(assets/dos.jpg);">
+          <div text-wrap card-title class="card-title"></div>
+          <div text-wrap card-subtitle class="card-subtitle">Reduce your risk of getting infected</div>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-label class="label label-md">
+        <h2 class="title">Do's and Don'ts</h2>
+        <h3 class="sub-title">as per WHO guidelines</h3>
+      </ion-label>
+    </ion-row>
+
+    <ion-row>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <h2>What you should have to do?</h2>
+        <p class="para">
+          Stay aware of the latest information on the COVID-19 outbreak, available on the WHO/CDC website and through your national and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. 
+
+        </p>
+
+        <h2>What you shouldn't have to</h2>
+        <p class="para">
+          The following measures ARE NOT effective against COVID-2019 and can be harmful:        </p>
+
+<ul>
+  <li class="list-orders">Smoking</li>
+  <li class="list-orders">Wearing multiple masks</li>
+  <li class="list-orders">Taking antibiotics</li>
+</ul>
+<p class="para">
+          In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.
+        </p>
+       
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

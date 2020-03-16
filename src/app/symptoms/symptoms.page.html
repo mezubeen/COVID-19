@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="secondary" [class.show-background]="showToolbar">
+    <ion-title>Symptoms</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <!-- <ion-icon slot="icon-only" name="logo-facebook"></ion-icon> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen (ionScroll)="onScroll($event)" [scrollEvents]="true">
+  <ion-grid no-padding>
+    <ion-row card-background-page padding-horizontal>
+
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card" background-size text-left (click)="toAwreness()"
+          style="background-image: url(assets/symptoms.jpg);">
+          <div text-wrap card-title class="card-title"></div>
+          <div text-wrap card-subtitle class="card-subtitle">Everything you need to know about 2019-nCov</div>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-label class="label label-md">
+        <h2 class="title">Major Symptoms</h2>
+        <h3 class="sub-title">Coronavirus disease (COVID-19)</h3>
+      </ion-label>
+    </ion-row>
+
+    <ion-row>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <h2>What are the symptoms of COVID-19?</h2>
+        <p class="para">
+          The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. <br><br>Some people become infected but don’t develop any symptoms and don't feel unwell. <strong>Most people (about 80%) recover from the disease without needing special treatment</strong>. <br><br>Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. <br><br>People with fever, cough and difficulty breathing should seek medical attention.
+        </p>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

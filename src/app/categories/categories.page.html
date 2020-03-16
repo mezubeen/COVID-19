@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>categories</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  <!--Theme Google Card - Full Image Cards-->
+  <ion-grid no-padding>
+    <ion-row card-background-page padding-horizontal>
+  
+        <ion-col no-padding col-12 col-md-12 col-lg-6>
+            <ion-card background-size text-left (click)="onEvent('onItemClick', item.title, $event)"
+            style="background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg);">
+                <!-- Card Title-->
+                <div text-wrap card-title class="card-title">Monumnets</div>
+                <!-- Card Subtitle-->
+                <div text-wrap card-subtitle class="card-subtitle">lorem ipsum wrrihfwef ierfi eguir g33 ir</div>
+            </ion-card>
+        </ion-col>
+  
+    </ion-row>
+  </ion-grid>
+  </ion-content>
+  

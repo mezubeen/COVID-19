@@ -1,0 +1,7 @@
+{
+  "name": "delhi-tour-guide",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

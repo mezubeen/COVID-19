@@ -1,0 +1,117 @@
+/* Transparent standard */
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+/* Show background if class is active */
+.show-background {
+    border-style: none;
+    background: #c3c3c3;
+    ion-back-button {
+        color: black;
+    }
+    ion-title {
+        color: black;
+    }
+}
+
+/* Remove bottom border on md */
+.header-md::after {
+    background-image: none;
+}
+
+/* Remove bottom border on ios */
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+
+
+ion-header{
+    ion-toolbar{
+        --ion-background-color:#bb2224;
+        --ion-color: white;
+    }
+}
+
+ion-title, ion-menu-button {
+    color: white;
+}
+
+.img-card {
+  background-repeat: round;
+  color: #ffffff;
+  background-color: #ff2a4645 !important;
+    background-blend-mode: multiply;
+    margin-left: -10px;
+    width: 106%;
+    margin-top: -67px;
+
+}
+
+.card-subtitle {
+  color: #ffffff;
+    // background-color: #dcdeff;
+    text-align: end;
+    font-weight: 900;
+    padding-bottom: 17px;
+    padding-left: 47px;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.sub-title {
+    font-size: 17px !important;
+    font-weight: 300;
+    color: #928f8f;
+    padding-left: 10px;
+}
+
+.para {
+    font-size: 1.2em;
+    color: #504949;
+}
+
+ion-card {
+    position: relative;
+    height: 225px;
+    // border-radius: 8px;
+    // border-radius: $border-radius;
+    // @include darkening-blend-mode;
+    box-shadow: none;
+    // margin-bottom: 16px;
+  }
+  // Card Title
+  .card-title {
+    position: absolute;
+    padding: 22px;
+    font-size: 22px;
+    font-size: font-size-text('h1') !important;
+    top: 0;
+    // color: theme-colors('textColors', 'secondaryBase') !important;
+  }
+
+  ion-app {
+    margin-top: 55px;
+  }
+
+  .list-orders {
+    font-size: 18px;
+    color: #504949;
+    line-height: 21px;
+  }
+
+  .sub-li {
+    color:#989898; 
+    font-style: italic; 
+    font-size: 18px;
+  }

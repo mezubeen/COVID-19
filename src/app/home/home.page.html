@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font-size: 16px;padding-left: 1px">Cause Prevention Is Better Than Cure</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-app>
+<ion-content>
+  <ion-grid no-padding>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="toAwreness()"
+          style="background-image: url(assets/awareness.jpg);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title">Awareness</div>
+          <!-- Card Subtitle-->
+          <!-- <div text-wrap card-subtitle class="card-subtitle">Basic protective measures against the new coronavirus</div> -->
+          <div text-wrap card-subtitle class="card-subtitle">Everything you need to know about 2019-nCov</div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="toSpread()"
+          style="background-image: url(assets/spread.jpg);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title"></div>
+          <!-- Card Subtitle-->
+          <!-- <div text-wrap card-subtitle class="card-subtitle">Basic protective measures against the new coronavirus</div> -->
+          <div text-wrap card-subtitle class="card-subtitle">How does COVID-19 spread?</div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="toSymptoms()"
+          style="background-image: url(assets/symptoms.jpg);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title">Symptoms</div>
+          <!-- Card Subtitle-->
+          <div text-wrap card-subtitle class="card-subtitle">The most common symptoms of COVID-19</div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="toPrevention()"
+          style="background-image: url(assets/prevention.jpg);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title">Preventions</div>
+          <!-- Card Subtitle-->
+          <div text-wrap card-subtitle class="card-subtitle">Reduce your risk of getting infected</div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="toDos()"
+          style="background-image: url(assets/dos.jpg);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title">Do's and Don'ts</div>
+          <!-- Card Subtitle-->
+          <div text-wrap card-subtitle class="card-subtitle">Reduce your risk of getting infected</div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row card-background-page padding-horizontal>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card ion-activatable ripple-parent" background-size text-left (click)="onEvent('onItemClick', item.title, $event)"
+          style="background-image: url(https://i.ya-webdesign.com/images/family-cartoon-png-3.png);">
+          <!-- Card Title-->
+          <div text-wrap card-title class="card-title">Sharing is Caring</div>
+          <!-- Card Subtitle-->
+          <div text-wrap card-subtitle class="card-subtitle">Share this free peace of software who knows someone might
+            really need this. </div>
+            <ion-ripple-effect></ion-ripple-effect>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-footer>
+    <ion-toolbar>
+
+      <div style="text-align: center;">Made with ❤️</div>
+      <!-- <ion-title>dg</ion-title> -->
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+</ion-app>
