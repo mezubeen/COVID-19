@@ -67,4 +67,9 @@ export class AppComponent  {
   toDos() {
     this.router.navigate(['dos']);
   }
+
+  toAbout(){
+    this.router.navigate(['about']);
+  }
+  
 }

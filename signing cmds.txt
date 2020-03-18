@@ -1,0 +1,16 @@
+incase:
+keyphrase   android
+
+
+ionic cordova build android --prod --release
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore C:\Users\BABAR\Documents\ionic\nawab-foods\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk corona_rescue
+
+
+zipalign -v 4 C:\Users\BABAR\Documents\ionic\corona-rescue\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk corona-rescue.apk
+
+ 
+
+
+

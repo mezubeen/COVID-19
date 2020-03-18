@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomePage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private socialSharing: SocialSharing) { }
 
   ngOnInit() {
   }
@@ -32,5 +34,16 @@ export class HomePage implements OnInit {
   toDos() {
     this.router.navigate(['dos']);
   }
+
+  share() {
+    var options = {
+        message: 'Hi, I am using Corona Rescue which is great to the knwledge of Corona Virus',
+        subject: 'Corona Rescue',
+        files: ['', ''],
+        url: 'https://play.google.com/store/apps/details?id=com.corona.rescue',
+        chooserTitle: 'Pick an app'
+    }
+    this.socialSharing.shareWithOptions(options);
+}
 
 }

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="secondary" [class.show-background]="showToolbar">
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <!-- <ion-icon slot="icon-only" name="logo-facebook"></ion-icon> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen (ionScroll)="onScroll($event)" [scrollEvents]="true">
+  <ion-grid no-padding>
+    <ion-row card-background-page padding-horizontal>
+
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <ion-card class="img-card" background-size text-left
+          style="background-image: url(assets/about.jpg);">
+          <div text-wrap card-title class="card-title"></div>
+          <!-- <div text-wrap card-subtitle class="card-subtitle">Reduce your risk of getting infected</div> -->
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-label class="label label-md">
+        <h3 style="font-size: 30px;" class="title">About this free piece of software</h3>
+        <h3 class="sub-title">and the developers :)</h3>
+      </ion-label>
+    </ion-row>
+
+    <ion-row>
+      <ion-col no-padding col-12 col-md-12 col-lg-6>
+        <h2>First of all</h2>
+       
+        <p>
+          <p class="list-orders">
+           The app is purely made for educational purposes and comes without any ads or money-making purposes behind the scenes. Developing an app is not a 2-minute task and requires a lot of time, It would be really nice if you take a moment and give us 5-star ratings on play store, It will surely encourage us to develop more free apps in future
+          </p><br>
+        
+          <a href="https://play.google.com/store/apps/details?id=com.corona.rescue" style="text-decoration: none;">
+          <ion-button  color="success">Success</ion-button></a>
+
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
